@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: sd fdsa, dsaf, LIC=JL28G-V0I8M-BS1YX-HTFCQ-YSS48-6JYFA
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      Segger\JL2CM3.dll V2.99.42.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\LIN\DALIEGU\MDK-ARM\DALIEGU.uvprojx
+Project File Date:  01/03/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'DALIEGU'
+../Core/Src/main_task.c(41): warning: passing 'volatile uint8_t *' (aka 'volatile unsigned char *') to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    memcpy(&tx_data[2], (const void *)points_data, TOTAL_POINTS / 2);
+           ^~~~~~~~~~~
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h(58): note: passing argument to parameter here
+extern _ARMABI void *memcpy(void * __restrict /*s1*/,
+                                                    ^
+../Core/Src/main_task.c(42): warning: passing 'volatile uint8_t *' (aka 'volatile unsigned char *') to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    memcpy(&tx_data[TOTAL_POINTS / 2 + 8], (const void *)&points_data[TOTAL_POINTS / 2], TOTAL_POINTS / 2);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h(58): note: passing argument to parameter here
+extern _ARMABI void *memcpy(void * __restrict /*s1*/,
+                                                    ^
+../Core/Src/main_task.c(46): warning: passing 'volatile uint8_t *' (aka 'volatile unsigned char *') to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    memcpy(&tx_data[TOTAL_POINTS + 8], (const void *)q_out, 16);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h(58): note: passing argument to parameter here
+extern _ARMABI void *memcpy(void * __restrict /*s1*/,
+                                                    ^
+../Core/Src/main_task.c(85): warning: passing 'volatile uint8_t[284]' (aka 'volatile unsigned char[284]') to parameter of type 'const uint8_t *' (aka 'const unsigned char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    HAL_UART_Transmit_DMA(&huart1, points_data, FRAME_LEN);
+                                   ^~~~~~~~~~~
+../Drivers/STM32G4xx_HAL_Driver/Inc\stm32g4xx_hal_uart.h(1637): note: passing argument to parameter 'pData' here
+HAL_StatusTypeDef HAL_UART_Transmit_DMA(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+                                                                                  ^
+4 warnings generated.
+compiling main_task.c...
+linking...
+Program Size: Code=25120 RO-data=1096 RW-data=12 ZI-data=3428  
+FromELF: creating hex file...
+"DALIEGU\DALIEGU.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32G4xx_DFP.2.0.0.pack
+                Keil.STM32G4xx_DFP.2.0.0
+                STMicroelectronics STM32G4 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_DALIEGU
+  C:/Users/zunly/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
