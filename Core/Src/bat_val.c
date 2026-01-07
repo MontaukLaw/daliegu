@@ -33,7 +33,7 @@ uint8_t bat_mini_volt_to_percentage(uint16_t mvolts)
     return battery_level;
 }
 
-static uint8_t count_bat_volt(uint16_t adc_val)
+static uint16_t count_bat_volt(uint16_t adc_val)
 {
     // 计算电压值
     // Vbat = (adc_val / 4095) * Vref * (R1 + R2) / R2
@@ -48,7 +48,7 @@ static uint8_t count_bat_volt(uint16_t adc_val)
     // bat_smooth_percentage = ema_u8(bat_percentage, bat_smooth_percentage, 5, 10);
 
     bat_smooth_mvolts = ema_u16(vbat_mvolts, bat_smooth_mvolts, 5, 10);
-
+    return bat_smooth_mvolts;
 }
 
 void bat_task(void)

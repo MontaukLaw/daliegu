@@ -62,3 +62,4 @@ daliegu\switch_hal.o: ../Core/Inc/led.h
 daliegu\switch_hal.o: ../Core/Inc/app_internal_flash.h
 daliegu\switch_hal.o: ../Core/Inc/i2c.h
 daliegu\switch_hal.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+daliegu\switch_hal.o: ../Core/Inc/device_define.h

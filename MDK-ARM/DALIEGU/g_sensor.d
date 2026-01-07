@@ -62,3 +62,4 @@ daliegu\g_sensor.o: ../Core/Inc/led.h
 daliegu\g_sensor.o: ../Core/Inc/app_internal_flash.h
 daliegu\g_sensor.o: ../Core/Inc/i2c.h
 daliegu\g_sensor.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+daliegu\g_sensor.o: ../Core/Inc/device_define.h

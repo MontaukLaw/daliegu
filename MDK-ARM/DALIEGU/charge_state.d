@@ -62,3 +62,4 @@ daliegu\charge_state.o: ../Core/Inc/led.h
 daliegu\charge_state.o: ../Core/Inc/app_internal_flash.h
 daliegu\charge_state.o: ../Core/Inc/i2c.h
 daliegu\charge_state.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+daliegu\charge_state.o: ../Core/Inc/device_define.h

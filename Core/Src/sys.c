@@ -18,7 +18,6 @@ void delay_ms(uint32_t ms)
 #if IWDG_ENABLED
         HAL_IWDG_Refresh(&hiwdg);
 #endif
-
     }
 }
 
@@ -55,4 +54,71 @@ void feed_iwdg(void)
 #if ENABLE_IWDG
     HAL_IWDG_Refresh(&hiwdg);
 #endif
+}
+
+void press256(uint8_t *in, uint8_t *out, uint16_t width, uint16_t height, uint16_t value, press_type_t type)
+{
+    uint16_t i, j;
+
+    memcpy(out, in, width * height * sizeof(uint8_t));
+
+    if (type == PRESS_ROW)
+    {
+        // 每一行的和
+        uint32_t rowSum[height];
+
+        for (i = 0; i < height; i++)
+        {
+            uint32_t sum = 0;
+            for (j = 0; j < width; j++)
+            {
+                sum += out[i * width + j];
+            }
+            rowSum[i] = sum;
+        }
+
+        // 压缩
+        for (i = 0; i < height; i++)
+        {
+            for (j = 0; j < width; j++)
+            {
+                uint16_t idx = i * width + j;
+                uint16_t oldVal = out[idx];
+
+                out[idx] = oldVal +
+                           (uint16_t)((rowSum[i] - oldVal) / value);
+            }
+        }
+    }
+    else // PRESS_COL
+    {
+        // 每一列的和
+        uint32_t colSum[height];
+
+        for (i = 0; i < height; i++)
+        {
+            uint32_t sum = 0;
+            for (j = 0; j < width; j++)
+            {
+                sum += out[j * height + i];
+            }
+            colSum[i] = sum;
+        }
+
+        // 压缩
+        for (i = 0; i < height; i++)
+        {
+            for (j = 0; j < width; j++)
+            {
+                uint16_t idx = j * height + i;
+                uint16_t oldVal = out[idx];
+
+                if (oldVal < 6)
+                    continue;
+
+                out[idx] = oldVal +
+                           (uint16_t)((colSum[i] - oldVal) / value);
+            }
+        }
+    }
 }

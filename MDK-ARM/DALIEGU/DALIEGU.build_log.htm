@@ -22,12 +22,66 @@ Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
 D:\LIN\FIRMWARE\daliegu\MDK-ARM\DALIEGU.uvprojx
-Project File Date:  01/05/2026
+Project File Date:  01/07/2026
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'DALIEGU'
-"DALIEGU\DALIEGU.axf" - 0 Error(s), 0 Warning(s).
+compiling sys.c...
+compiling start_control.c...
+compiling bl.c...
+compiling switch_hal.c...
+compiling key.c...
+compiling check_mems_type.c...
+compiling charge_state.c...
+compiling g_sensor.c...
+compiling main_task.c...
+..\Core\Src\main_task.c(72): warning:  #167-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "void *restrict"
+      memcpy(&tx_data[
+IRST_PACK_START_IDX], (const void *)points_data_after_proc, 
+OTAL_POINTS / 2);
+..\Core\Src\main_task.c(74): warning:  #167-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "void *restrict"
+      memcpy(&tx_data[
+ECOND_PACK_START_IDX], (const void *)&points_data_after_proc[
+OTAL_POINTS / 2], 
+OTAL_POINTS / 2);
+..\Core\Src\main_task.c(87): warning:  #167-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "void *restrict"
+      memcpy(&tx_data[
+OTAL_POINTS + 
+ACK_TYPE_LEN * 2 + 
+ACK_IDX_LEN * 2 + 
+ACKAGE_HEAD_LEN * 2], (const void *)q_out, sizeof(float) * 4);
+..\Core\Src\main_task.c(59): warning:  #550-D: variable "status"  was set but never used
+      HAL_StatusTypeDef status = HAL_OK;
+..\Core\Src\main_task.c(114): warning:  #167-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+              adc_data_handler_with_idx(point_nmb, points_data);
+..\Core\Src\main_task.c(124): warning:  #167-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+      press256(points_data, points_data_after_proc, 
+DC_CH_NUMBER, 
+NPUT_CH_NUMBER, 128, PRESS_ROW);
+..\Core\Src\main_task.c(124): warning:  #167-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+      press256(points_data, points_data_after_proc, 
+DC_CH_NUMBER, 
+NPUT_CH_NUMBER, 128, PRESS_ROW);
+..\Core\Src\main_task.c(160): warning:  #167-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+                  adc_data_handler_with_idx(point_nmb, points_data_1024);
+..\Core\Src\main_task.c: 8 warnings, 0 errors
+compiling bat_val.c...
+compiling usart.c...
+compiling main.c...
+../Core/Src/main.c(106): warning:  #223-D: function "start_control" declared implicitly
+      start_control();
+../Core/Src/main.c: 1 warning, 0 errors
+compiling icm42688.c...
+compiling app_internal_flash.c...
+compiling mems.c...
+compiling led.c...
+compiling comm.c...
+compiling icm42688_hard_i2c.c...
+linking...
+Program Size: Code=49244 RO-data=1296 RW-data=300 ZI-data=6796  
+FromELF: creating hex file...
+"DALIEGU\DALIEGU.axf" - 0 Error(s), 9 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -51,7 +105,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE@6.1.0
       Include file:  CMSIS/Core/Include/tz_context.h
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:07
 </pre>
 </body>
 </html>

@@ -62,3 +62,4 @@ daliegu\bat_val.o: ../Core/Inc/led.h
 daliegu\bat_val.o: ../Core/Inc/app_internal_flash.h
 daliegu\bat_val.o: ../Core/Inc/i2c.h
 daliegu\bat_val.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+daliegu\bat_val.o: ../Core/Inc/device_define.h

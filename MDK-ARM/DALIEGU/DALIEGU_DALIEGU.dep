@@ -1,8 +1,8 @@
 Dependencies for Project 'DALIEGU', Target 'DALIEGU': (DO NOT MODIFY !)
 CompilerVersion: 5060422::V5.06 update 4 (build 422)::ARMCC
-F (startup_stm32g431xx.s)(0x695B8C9D)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include--pd "__UVISION_VERSION SETA 541" --pd "STM32G431xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32g431xx.lst --xref -o daliegu\startup_stm32g431xx.o --depend daliegu\startup_stm32g431xx.d)
-F (..\Core\Src\sys.c)(0x695B6439)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\sys.o --omf_browse daliegu\sys.crf --depend daliegu\sys.d)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+F (startup_stm32g431xx.s)(0x695DCFD1)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include--pd "__UVISION_VERSION SETA 541" --pd "STM32G431xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32g431xx.lst --xref -o daliegu\startup_stm32g431xx.o --depend daliegu\startup_stm32g431xx.d)
+F (..\Core\Src\sys.c)(0x695E2F13)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\sys.o --omf_browse daliegu\sys.crf --depend daliegu\sys.d)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (../Core/Inc/main.h)(0x695B668E)
@@ -40,7 +40,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -58,14 +58,15 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
-F (..\Core\Src\main_task.c)(0x695B8B49)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\main_task.o --omf_browse daliegu\main_task.crf --depend daliegu\main_task.d)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
+F (..\Core\Src\main_task.c)(0x695E2E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\main_task.o --omf_browse daliegu\main_task.crf --depend daliegu\main_task.d)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (../Core/Inc/main.h)(0x695B668E)
@@ -103,7 +104,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -121,14 +122,15 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
-F (..\Core\Src\switch_hal.c)(0x695B22D4)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\switch_hal.o --omf_browse daliegu\switch_hal.crf --depend daliegu\switch_hal.d)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
+F (..\Core\Src\switch_hal.c)(0x695C7495)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\switch_hal.o --omf_browse daliegu\switch_hal.crf --depend daliegu\switch_hal.d)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (../Core/Inc/main.h)(0x695B668E)
@@ -166,7 +168,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -184,14 +186,15 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
-F (..\Core\Src\bat_val.c)(0x695B65B7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\bat_val.o --omf_browse daliegu\bat_val.crf --depend daliegu\bat_val.d)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
+F (..\Core\Src\bat_val.c)(0x695E2EE2)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\bat_val.o --omf_browse daliegu\bat_val.crf --depend daliegu\bat_val.d)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (../Core/Inc/main.h)(0x695B668E)
@@ -229,7 +232,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -247,14 +250,15 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
 F (..\Core\Src\bl.c)(0x695B703C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\bl.o --omf_browse daliegu\bl.crf --depend daliegu\bl.d)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (../Core/Inc/main.h)(0x695B668E)
@@ -292,7 +296,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -310,14 +314,15 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
 F (..\Core\Src\comm.c)(0x695B22D4)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\comm.o --omf_browse daliegu\comm.crf --depend daliegu\comm.d)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (../Core/Inc/main.h)(0x695B668E)
@@ -355,7 +360,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -373,14 +378,15 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
-F (..\Core\Src\key.c)(0x695B8C3F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\key.o --omf_browse daliegu\key.crf --depend daliegu\key.d)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
+F (..\Core\Src\key.c)(0x695E2D8E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\key.o --omf_browse daliegu\key.crf --depend daliegu\key.d)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (../Core/Inc/main.h)(0x695B668E)
@@ -418,7 +424,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -436,14 +442,15 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
 F (..\Core\Src\led.c)(0x695A3CF7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\led.o --omf_browse daliegu\led.crf --depend daliegu\led.d)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (../Core/Inc/main.h)(0x695B668E)
@@ -481,7 +488,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -499,14 +506,15 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
 F (..\Core\Src\charge_state.c)(0x695B669D)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\charge_state.o --omf_browse daliegu\charge_state.crf --depend daliegu\charge_state.d)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (../Core/Inc/main.h)(0x695B668E)
@@ -544,7 +552,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -562,14 +570,15 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
 F (..\Core\Src\mems.c)(0x694A890F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\mems.o --omf_browse daliegu\mems.crf --depend daliegu\mems.d)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (../Core/Inc/main.h)(0x695B668E)
@@ -607,7 +616,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -625,14 +634,15 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
 F (..\Core\Src\check_mems_type.c)(0x695A1BDF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\check_mems_type.o --omf_browse daliegu\check_mems_type.crf --depend daliegu\check_mems_type.d)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (../Core/Inc/main.h)(0x695B668E)
@@ -670,7 +680,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -688,14 +698,15 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
 F (..\Core\Src\app_internal_flash.c)(0x695B828E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\app_internal_flash.o --omf_browse daliegu\app_internal_flash.crf --depend daliegu\app_internal_flash.d)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (../Core/Inc/main.h)(0x695B668E)
@@ -733,7 +744,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -751,14 +762,15 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
-F (..\Core\Src\g_sensor.c)(0x695B8D0A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\g_sensor.o --omf_browse daliegu\g_sensor.crf --depend daliegu\g_sensor.d)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
+F (..\Core\Src\g_sensor.c)(0x695B90E5)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\g_sensor.o --omf_browse daliegu\g_sensor.crf --depend daliegu\g_sensor.d)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (../Core/Inc/main.h)(0x695B668E)
@@ -796,7 +808,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -814,14 +826,15 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
 F (..\Core\Src\icm42688_hard_i2c.c)(0x695A209B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\icm42688_hard_i2c.o --omf_browse daliegu\icm42688_hard_i2c.crf --depend daliegu\icm42688_hard_i2c.d)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (../Core/Inc/main.h)(0x695B668E)
@@ -859,7 +872,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -877,14 +890,15 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
 F (..\Core\Src\icm42688.c)(0x695A1792)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\icm42688.o --omf_browse daliegu\icm42688.crf --depend daliegu\icm42688.d)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (../Core/Inc/main.h)(0x695B668E)
@@ -922,7 +936,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -940,14 +954,15 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
-F (..\Core\Src\start_control.c)(0x695B8CF9)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\start_control.o --omf_browse daliegu\start_control.crf --depend daliegu\start_control.d)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
+F (..\Core\Src\start_control.c)(0x695DCED6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\start_control.o --omf_browse daliegu\start_control.crf --depend daliegu\start_control.d)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (../Core/Inc/main.h)(0x695B668E)
@@ -985,7 +1000,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -1003,13 +1018,14 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
-F (../Core/Src/main.c)(0x695B8CA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\main.o --omf_browse daliegu\main.crf --depend daliegu\main.d)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
+F (../Core/Src/main.c)(0x695DD391)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\main.o --omf_browse daliegu\main.crf --depend daliegu\main.d)
 I (../Core/Inc/main.h)(0x695B668E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x694136C0)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x695B22D4)
@@ -1052,9 +1068,9 @@ I (../Core/Inc/i2c.h)(0x695B22D4)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/usart.h)(0x695B22D4)
 I (../Core/Inc/gpio.h)(0x695B22D4)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
 I (../Core/Inc/bat_val.h)(0x695B22D4)
@@ -1069,12 +1085,13 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
-F (../Core/Src/gpio.c)(0x695B8C9A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\gpio.o --omf_browse daliegu\gpio.crf --depend daliegu\gpio.d)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
+F (../Core/Src/gpio.c)(0x695DCFCD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\gpio.o --omf_browse daliegu\gpio.crf --depend daliegu\gpio.d)
 I (../Core/Inc/gpio.h)(0x695B22D4)
 I (../Core/Inc/main.h)(0x695B668E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x694136C0)
@@ -1302,9 +1319,9 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x694136C0)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x694136C0)
-I (../Core/Inc/user_comm.h)(0x695B759C)
+I (../Core/Inc/user_comm.h)(0x695E2E28)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
-I (../Core/Inc/sys.h)(0x695B643D)
+I (../Core/Inc/sys.h)(0x695E2F2E)
 I (../Core/Inc/iwdg.h)(0x695B22D4)
 I (../Core/Inc/switch_hal.h)(0x695B22D4)
 I (../Core/Inc/main_task.h)(0x695B6B47)
@@ -1321,12 +1338,13 @@ I (../Core/Inc/icm42688_hard_i2c.h)(0x694A89C6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
 I (../Core/Inc/mems.h)(0x692A9AC4)
 I (../Core/Inc/qst_ahrs.h)(0x692A5C89)
-I (../Core/Inc/g_sensor.h)(0x694A89A5)
+I (../Core/Inc/g_sensor.h)(0x695B90EF)
 I (../Core/Inc/qmi8658_app.h)(0x69302431)
 I (../Core/Inc/led.h)(0x68E7B256)
 I (../Core/Inc/app_internal_flash.h)(0x695A25F7)
 I (../Core/Inc/i2c.h)(0x695B22D4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (../Core/Inc/device_define.h)(0x695CCC6F)
 F (../Core/Src/stm32g4xx_it.c)(0x695B22D4)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include --diag-suppress=177,1-I.\RTE\_DALIEGU-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="541" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o daliegu\stm32g4xx_it.o --omf_browse daliegu\stm32g4xx_it.crf --depend daliegu\stm32g4xx_it.d)
 I (../Core/Inc/main.h)(0x695B668E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x694136C0)

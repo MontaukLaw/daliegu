@@ -62,3 +62,4 @@ daliegu\main_task.o: ../Core/Inc/led.h
 daliegu\main_task.o: ../Core/Inc/app_internal_flash.h
 daliegu\main_task.o: ../Core/Inc/i2c.h
 daliegu\main_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+daliegu\main_task.o: ../Core/Inc/device_define.h

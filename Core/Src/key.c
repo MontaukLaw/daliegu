@@ -34,9 +34,7 @@ void key_task(void)
         if (key_down_counter >= RESET_GQ_KEY_SHAKE_DELAY) // 1s
         {
             imu_reseted = 1;
-
-            reset_q_out();
-
+            qst_vqf_init(0.01f);
         }
         key_down_counter = 0;
     }

@@ -62,3 +62,4 @@ daliegu\key.o: ../Core/Inc/led.h
 daliegu\key.o: ../Core/Inc/app_internal_flash.h
 daliegu\key.o: ../Core/Inc/i2c.h
 daliegu\key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+daliegu\key.o: ../Core/Inc/device_define.h

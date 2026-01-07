@@ -30,6 +30,7 @@
 #include "app_internal_flash.h"
 #include "i2c.h"
 #include <math.h>
+#include "device_define.h"
 
 #define ENABLE_IWDG 1
 
@@ -119,5 +120,7 @@ typedef struct
 #define DEG2RAD 0.017453293f /* 度转弧度 π/180 */
 #define MAX_STATIC_CALI_COUNTER 100
 
+/////////////////// ALGRITHM ////////////////////
+#define USE_PRESS 1
 
 #endif /* _USER_COMM_H_ */

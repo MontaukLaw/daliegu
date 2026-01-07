@@ -2,6 +2,7 @@
 
 uint8_t main_adc_buf[ADC1_BUF_SIZE];
 volatile uint8_t points_data[TOTAL_POINTS] = {0};
+volatile uint8_t points_data_after_proc[TOTAL_POINTS] = {0};
 volatile uint8_t points_data_1024[1024] = {0};
 volatile uint8_t need_send_reset_signal = 0;
 volatile uint8_t imu_rest_tx_data[5] = {0x03, 0xAA, 0x55, 0x03, 0x99};
@@ -42,7 +43,7 @@ void fill_tx_data(void)
     tx_data[2] = 0x03;
     tx_data[3] = 0x99;
     tx_data[4] = FIRST_PACK_IDX;
-    tx_data[5] = LEFT_HAND;
+    tx_data[5] = DEVICE_TYPE;
 
     // 第二个包
     tx_data[FIRST_PACK_START_IDX + TOTAL_POINTS / 2] = 0xaa;
@@ -50,7 +51,7 @@ void fill_tx_data(void)
     tx_data[FIRST_PACK_START_IDX + TOTAL_POINTS / 2 + 2] = 0x03;
     tx_data[FIRST_PACK_START_IDX + TOTAL_POINTS / 2 + 3] = 0x99;
     tx_data[FIRST_PACK_START_IDX + TOTAL_POINTS / 2 + 4] = SECOND_PACK_IDX;
-    tx_data[FIRST_PACK_START_IDX + TOTAL_POINTS / 2 + 5] = LEFT_HAND;
+    tx_data[FIRST_PACK_START_IDX + TOTAL_POINTS / 2 + 5] = DEVICE_TYPE;
 }
 
 void uart_send(void)
@@ -66,6 +67,12 @@ void uart_send(void)
 #if USE_PRESS
     // memcpy(&tx_data[2], (const void *)points_data_after_proc, TOTAL_POINTS / 2);
     // memcpy(&tx_data[TOTAL_POINTS / 2 + 8], (const void *)&points_data_after_proc[TOTAL_POINTS / 2], TOTAL_POINTS / 2);
+
+    // 将一半数据复制到tx_data
+    memcpy(&tx_data[FIRST_PACK_START_IDX], (const void *)points_data_after_proc, TOTAL_POINTS / 2);
+    // 另一半数据复制到tx_data
+    memcpy(&tx_data[SECOND_PACK_START_IDX], (const void *)&points_data_after_proc[TOTAL_POINTS / 2], TOTAL_POINTS / 2);
+
 #else
 
     // 将一半数据复制到tx_data
@@ -113,7 +120,12 @@ void main_task(void)
         set_channel_pin(input_idx, GPIO_PIN_RESET);
     }
 
+#if USE_PRESS
+    press256(points_data, points_data_after_proc, ADC_CH_NUMBER, INPUT_CH_NUMBER, 128, PRESS_ROW);
+#endif
+
     uart_send();
+
 }
 
 void main_task_1024(void)

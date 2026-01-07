@@ -62,3 +62,4 @@ daliegu\check_mems_type.o: ../Core/Inc/led.h
 daliegu\check_mems_type.o: ../Core/Inc/app_internal_flash.h
 daliegu\check_mems_type.o: ../Core/Inc/i2c.h
 daliegu\check_mems_type.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+daliegu\check_mems_type.o: ../Core/Inc/device_define.h
