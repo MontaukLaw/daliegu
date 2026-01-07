@@ -5,7 +5,6 @@ uint8_t bat_percentage;
 uint8_t bat_smooth_percentage = 100;
 uint16_t bat_smooth_mvolts = 4200;
 
-
 // 针对4.2伏特锂电池的点亮百分比算法.
 // 3720-3645 = 75 75/26 = 2.88
 // 4200- 4100 = 100 100/6 = 16.66
@@ -55,9 +54,6 @@ static uint8_t count_bat_volt(uint16_t adc_val)
 void bat_task(void)
 {
 
-    if (bat_adc_done == 0)
-        return;
-
     static uint32_t last_sys_tick = 0;
     uint32_t now = HAL_GetTick();
     if (now - last_sys_tick < 1000)
@@ -65,14 +61,13 @@ void bat_task(void)
         return;
     }
 
-    // last_sys_tick = now;
     uint32_t val_total = 0;
-    for (uint8_t i = 0; i < ADC2_BUF_SIZE; i++)
+    for (uint16_t i = 0; i < ADC2_BUF_SIZE; i++)
     {
         val_total += bat_val_dma_buf[i];
     }
 
     count_bat_volt((uint16_t)(val_total / ADC2_BUF_SIZE));
 
-    bat_adc_done = 0;
+    last_sys_tick = now;
 }

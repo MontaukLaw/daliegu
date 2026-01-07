@@ -49,3 +49,10 @@ uint16_t ema_u16(uint16_t new_data, uint16_t last_data, uint16_t a_num, uint16_t
 {
     return (uint16_t)((a_num * new_data + (a_den - a_num) * last_data) / a_den);
 }
+
+void feed_iwdg(void)
+{
+#if ENABLE_IWDG
+    HAL_IWDG_Refresh(&hiwdg);
+#endif
+}

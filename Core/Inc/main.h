@@ -61,6 +61,8 @@ void Error_Handler(void);
 #define SW_4067_S0_GPIO_Port GPIOC
 #define BL_FLOW_CTL_Pin GPIO_PIN_14
 #define BL_FLOW_CTL_GPIO_Port GPIOC
+#define CHRG_Pin GPIO_PIN_15
+#define CHRG_GPIO_Port GPIOC
 #define SW_4067_EN_2_Pin GPIO_PIN_1
 #define SW_4067_EN_2_GPIO_Port GPIOA
 #define SW_4067_EN_1_Pin GPIO_PIN_2
@@ -97,6 +99,10 @@ void Error_Handler(void);
 #define OUT_0_GPIO_Port GPIOB
 #define SW_4067_S1_Pin GPIO_PIN_6
 #define SW_4067_S1_GPIO_Port GPIOC
+#define KEY_Pin GPIO_PIN_11
+#define KEY_GPIO_Port GPIOA
+#define PWR_CTRL_Pin GPIO_PIN_12
+#define PWR_CTRL_GPIO_Port GPIOA
 #define LED_G_Pin GPIO_PIN_15
 #define LED_G_GPIO_Port GPIOA
 #define LED_R_Pin GPIO_PIN_10

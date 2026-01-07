@@ -70,10 +70,11 @@ void bl_link_status_check(void)
     {
         return;
     }
+    
     last_run_ts = HAL_GetTick();
 
     // 读取bl link引脚
-    if (HAL_GPIO_ReadPin(BL_LINK_GPIO_Port, BL_LINK_Pin) == GPIO_PIN_SET)
+    if (HAL_GPIO_ReadPin(BL_LINK_GPIO_Port, BL_LINK_Pin) == GPIO_PIN_RESET)
     {
         if (bl_conn_status == 0)
         {

@@ -1,43 +1,64 @@
-daliegu/bl.o: ..\Core\Src\bl.c ..\Core\Inc\user_comm.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h ..\Core\Inc\main.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h \
-  ..\Core\Inc\stm32g4xx_hal_conf.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h \
-  ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h \
-  ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h \
-  ..\Drivers\CMSIS\Include\core_cm4.h \
-  ..\Drivers\CMSIS\Include\cmsis_version.h \
-  ..\Drivers\CMSIS\Include\cmsis_compiler.h \
-  ..\Drivers\CMSIS\Include\cmsis_armclang.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
-  ..\Drivers\CMSIS\Include\mpu_armv7.h \
-  ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_cortex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_adc.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_adc.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_adc_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_exti.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ramfunc.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_iwdg.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_i2c.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_i2c_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h \
-  ..\Core\Inc\sys.h ..\Core\Inc\iwdg.h ..\Core\Inc\switch_hal.h \
-  ..\Core\Inc\main_task.h ..\Core\Inc\bat_val.h ..\Core\Inc\adc.h \
-  ..\Core\Inc\usart.h ..\Core\Inc\bl.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h ..\Core\Inc\comm.h
+daliegu\bl.o: ..\Core\Src\bl.c
+daliegu\bl.o: ../Core/Inc/user_comm.h
+daliegu\bl.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+daliegu\bl.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+daliegu\bl.o: ../Core/Inc/main.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h
+daliegu\bl.o: ../Core/Inc/stm32g4xx_hal_conf.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h
+daliegu\bl.o: ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h
+daliegu\bl.o: ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h
+daliegu\bl.o: ../Drivers/CMSIS/Include/core_cm4.h
+daliegu\bl.o: ../Drivers/CMSIS/Include/cmsis_version.h
+daliegu\bl.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+daliegu\bl.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+daliegu\bl.o: ../Drivers/CMSIS/Include/mpu_armv7.h
+daliegu\bl.o: ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+daliegu\bl.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc_ex.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_iwdg.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c_ex.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h
+daliegu\bl.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h
+daliegu\bl.o: ../Core/Inc/sys.h
+daliegu\bl.o: ../Core/Inc/iwdg.h
+daliegu\bl.o: ../Core/Inc/switch_hal.h
+daliegu\bl.o: ../Core/Inc/main_task.h
+daliegu\bl.o: ../Core/Inc/bat_val.h
+daliegu\bl.o: ../Core/Inc/adc.h
+daliegu\bl.o: ../Core/Inc/usart.h
+daliegu\bl.o: ../Core/Inc/bl.h
+daliegu\bl.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+daliegu\bl.o: ../Core/Inc/comm.h
+daliegu\bl.o: ../Core/Inc/key.h
+daliegu\bl.o: ../Core/Inc/charge_state.h
+daliegu\bl.o: ../Core/Inc/check_mems_type.h
+daliegu\bl.o: ../Core/Inc/icm42688.h
+daliegu\bl.o: ../Core/Inc/icm42688_hard_i2c.h
+daliegu\bl.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+daliegu\bl.o: ../Core/Inc/mems.h
+daliegu\bl.o: ../Core/Inc/qst_ahrs.h
+daliegu\bl.o: ../Core/Inc/g_sensor.h
+daliegu\bl.o: ../Core/Inc/qmi8658_app.h
+daliegu\bl.o: ../Core/Inc/led.h
+daliegu\bl.o: ../Core/Inc/app_internal_flash.h
+daliegu\bl.o: ../Core/Inc/i2c.h
+daliegu\bl.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

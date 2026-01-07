@@ -1,6 +1,6 @@
 #include "user_comm.h"
 
-const GPIO_Channel channels[64] = {CH_DEF(0), CH_DEF(1), CH_DEF(2), CH_DEF(3),
+const GPIO_Channel channels[14] = {CH_DEF(0), CH_DEF(1), CH_DEF(2), CH_DEF(3),
                                    CH_DEF(4), CH_DEF(5), CH_DEF(6), CH_DEF(7),
                                    CH_DEF(8), CH_DEF(9), CH_DEF(10), CH_DEF(11),
                                    CH_DEF(12), CH_DEF(13)};
